@@ -10,9 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.mytestapplication.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.microsoft.appcenter.AppCenter;
-import com.microsoft.appcenter.analytics.Analytics;
-import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.AppCenter
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,8 +36,7 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         AppCenter.start(
-            application, "{Your app secret here}",
-            Analytics::class.java, Crashes::class.java
+            application, "fc07d959-8c11-402a-bfc1-afcbae1935ca"
         )
     }
 
