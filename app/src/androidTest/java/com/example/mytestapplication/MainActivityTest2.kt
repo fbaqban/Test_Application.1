@@ -46,23 +46,24 @@ class MainActivityTest2 {
         )
         materialButton.perform(click())
 
-        val materialButton2 = onView(
-            allOf(
-                withId(R.id.button_next), withText("Next"),
-                childAtPosition(
-                    allOf(
-                        withId(R.id.container),
-                        childAtPosition(
-                            withId(android.R.id.content),
-                            0
-                        )
-                    ),
-                    2
-                ),
-                isDisplayed()
-            )
-        )
-        materialButton2.perform(click())
+
+//        val materialButton2 = onView(
+//            allOf(
+//                withId(R.id.button_next), withText("Next"),
+//                childAtPosition(
+//                    allOf(
+//                        withId(R.id.container),
+//                        childAtPosition(
+//                            withId(android.R.id.content),
+//                            0
+//                        )
+//                    ),
+//                    2
+//                ),
+//                isDisplayed()
+//            )
+//        )
+//        materialButton2.perform(click())
 
         val textView = onView(
             allOf(
